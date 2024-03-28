@@ -9,14 +9,19 @@ book 객체 내에 '출판년도(publishedYear)' 속성이 있는지 확인해 �
 */
 
 // 제시 코드
-const book = {
+const book = [{
     title: "한 입 크기로 잘라먹는 리액트",
     author: "이정환",
     // publishedYear 속성은 이 객체에는 없습니다.
-};
+}, {
+    title: "리액트를 다루는 기술",
+    author: "김민준",
+    publishedYear: "2019",
+}];
 
 function findProperty(book) {
     book.publishedYear? console.log("출판년도는 " + `${book.publishedYear}` + "입니다.") : console.log("출판년도 정보가 없습니다.");
 }
 
-findProperty(book);
+findProperty(book[0]);
+findProperty(book[1]);
