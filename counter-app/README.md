@@ -1,12 +1,60 @@
-# React + Vite
+# Counter-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 구현 화면
 
-Currently, two official plugins are available:
+![alt text](image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 구현 기능
 
-## Expanding the ESLint configuration
+1. 버튼 클릭 시 해당하는 숫자만큼 카운트 변경
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**폴더구조**
+
+```
+├─ counter-app
+│  ├─ README.md
+│  ├─ eslint.config.js
+│  ├─ index.html
+│  ├─ package-lock.json
+│  ├─ package.json
+│  ├─ public
+│  │  └─ vite.svg
+│  ├─ src
+│  │  ├─ App.css
+│  │  ├─ App.jsx
+│  │  ├─ assets
+│  │  ├─ components
+│  │  │  ├─ Controller.jsx
+│  │  │  └─ Viewer.jsx
+│  │  ├─ index.css
+│  │  └─ main.jsx
+│  └─ vite.config.js
+```
+
+## 추가 구현 기능
+
+1. 버튼을 컴포넌트로 구현하기
+
+**폴더 구조**
+
+```
+├─ counter-app
+│  ├─ README.md
+│  ├─ eslint.config.js
+│  ├─ index.html
+│  ├─ package-lock.json
+│  ├─ package.json
+│  ├─ public
+│  │  └─ vite.svg
+│  ├─ src
+│  │  ├─ App.css
+│  │  ├─ App.jsx
+│  │  ├─ assets
+│  │  ├─ components
+│  │  │  ├─ Controller.jsx
+│  │  │  ├─ Button.jsx
+│  │  │  └─ Viewer.jsx
+│  │  ├─ index.css
+│  │  └─ main.jsx
+│  └─ vite.config.js
+```
